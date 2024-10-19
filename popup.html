@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            body {
+                width: 300px;
+                padding: 10px;
+            }
+            #urlList {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Auto Media Downloader</h2>
+        <p>Status: <span id="status">Active</span></p>
+        <button id="toggleBtn">Disable</button>
+
+        <h3>Continuous Scrolling</h3>
+        <label>
+            <input type="checkbox" id="scrollToggle" /> Enable Scrolling
+        </label>
+        <br />
+        <label>
+            Scroll Speed:
+            <input type="number" id="scrollSpeed" min="1" max="10" value="1" />
+        </label>
+
+        <h3>Allowed URLs:</h3>
+        <input type="text" id="newUrl" placeholder="Enter new URL" />
+        <button id="addUrl">Add URL</button>
+        <ul id="urlList"></ul>
+        <script src="popup.js"></script>
+    </body>
+</html>
